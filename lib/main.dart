@@ -16,14 +16,9 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Text(
-          'Body of my first app',
-          style: TextStyle(
-            fontSize: 24,
-            decoration: TextDecoration.underline,
-            fontWeight: FontWeight.w900,
-            fontFamily: 'Mansalva',
-          ),
+        child: Image(
+          image: NetworkImage(
+              'https://images.unsplash.com/photo-1569346332452-876d0eef389f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
