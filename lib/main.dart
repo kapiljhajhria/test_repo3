@@ -6,12 +6,23 @@ void main() => runApp(
           appBar: AppBar(
             title: Text("My first Flutter App"),
             centerTitle: true,
+            backgroundColor: Colors.red[600],
           ),
           body: Center(
-            child: Text('Body of my first app'),
+            child: Text(
+              'Body of my first app',
+              style: TextStyle(
+                fontSize: 24,
+                decoration: TextDecoration.underline,
+                fontWeight: FontWeight.w900,
+                fontFamily: 'Mansalva',
+              ),
+            ),
           ),
           floatingActionButton: FloatingActionButton(
+            onPressed: () {},
             child: Text('tap'),
+            backgroundColor: Colors.red[600],
           ),
         ),
       ),
