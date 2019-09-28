@@ -10,22 +10,113 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("My first Flutter App"),
-        centerTitle: true,
-        backgroundColor: Colors.red[600],
-      ),
-      body: Container(
-        child: Text('hello'),
-        padding: EdgeInsets.all(10.0),
-        margin: EdgeInsets.all(15.0),
-        color: Colors.yellow,
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Text('tap'),
-        backgroundColor: Colors.red[600],
-      ),
-    );
+        appBar: AppBar(
+          title: Text("Calculator"),
+          centerTitle: true,
+          backgroundColor: Colors.brown[600],
+        ),
+        body: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      child: Text('7'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('4'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('1'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('0'),
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      child: Text('8'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('5'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('2'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('.'),
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      child: Text('9'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('6'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('3'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('='),
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      child: Text('/'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('-'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('+'),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Text('*'),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ));
   }
 }
