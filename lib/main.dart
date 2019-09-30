@@ -113,6 +113,7 @@ class Home extends StatelessWidget {
                     child: Container(
                       child: Center(
                         child: RaisedButton(
+                          color: Colors.orangeAccent,
                           onPressed: () {
                             print('.');
                           },
@@ -165,6 +166,7 @@ class Home extends StatelessWidget {
                     child: Container(
                       child: Center(
                         child: RaisedButton(
+                          color: Colors.cyan,
                           onPressed: () {
                             print('=');
                           },
@@ -181,6 +183,7 @@ class Home extends StatelessWidget {
                     child: Container(
                       child: Center(
                         child: RaisedButton(
+                          color: Colors.yellow,
                           onPressed: () {
                             print('/');
                           },
@@ -193,6 +196,7 @@ class Home extends StatelessWidget {
                     child: Container(
                       child: Center(
                         child: RaisedButton(
+                          color: Colors.yellow,
                           onPressed: () {
                             print('-');
                           },
@@ -205,6 +209,7 @@ class Home extends StatelessWidget {
                     child: Container(
                       child: Center(
                         child: RaisedButton(
+                          color: Colors.yellow,
                           onPressed: () {
                             print('*');
                           },
@@ -217,6 +222,7 @@ class Home extends StatelessWidget {
                     child: Container(
                       child: Center(
                         child: RaisedButton(
+                          color: Colors.yellow,
                           onPressed: () {
                             print('+');
                           },
